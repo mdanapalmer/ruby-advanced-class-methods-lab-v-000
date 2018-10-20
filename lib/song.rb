@@ -46,12 +46,10 @@ end
 
 def self.new_from_filename(filename)
   file_name = filename.split(" - ")
-  songs = file_name.collect do |element|
-    data = element.split(".mp3")
-    artist = data[0]
-    name = data[1]
+    artist_name = file_name[0]
+    song_name = file_name[1].gsub(".mp3", "")
 
-    song = Song.new
+    song = self.new
     song.artist_name = artist
     song.name = name
     song
