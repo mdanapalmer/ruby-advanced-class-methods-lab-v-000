@@ -52,7 +52,7 @@ def self.new_from_filename(filename)
     name = data[1]
 
     song = Song.new
-    song.artist = artist
+    song.artist_name = artist
     song.name = name
     song
   end
