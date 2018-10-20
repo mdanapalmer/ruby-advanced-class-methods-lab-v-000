@@ -51,7 +51,7 @@ def self.new_from_filename(filename)
     artist = data[0]
     name = data[1]
 
-    song = Song.new 
+    song = Song.new
     song.artist = artist
     song.name = name
     song
