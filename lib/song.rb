@@ -40,4 +40,8 @@ def self.find_or_create_by_name(name)
   find_by_name(name) || create_by_name(name)
 end
 
+def self.alphabetical
+  @@all.sort_by { |name| name.sort}
+end
+
 end
