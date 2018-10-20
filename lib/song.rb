@@ -23,7 +23,12 @@ def self.new_by_name(name)
   song
 end
 
-def self.create_by_name
+def self.create_by_name(name)
+  song = Song.new
+  song.name = name
+  @@all << self
+  song
+end
 
 end
 
