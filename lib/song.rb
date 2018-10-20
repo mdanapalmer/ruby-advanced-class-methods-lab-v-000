@@ -50,8 +50,8 @@ def self.new_from_filename(filename)
     song_name = file_name[1].gsub(".mp3", "")
 
     song = self.new
-    song.artist_name = artist
-    song.name = name
+    song.artist_name = artist_name
+    song.name = song_name
     song
   end
 end
