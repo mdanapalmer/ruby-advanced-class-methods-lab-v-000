@@ -10,6 +10,12 @@ class Song
   def save
     self.class.all << self
   end
+
+def self.create(song_name)
+  song = Song.new(song_name)
+  @@all << song
+end
+
+end
   
-def self.create(name)
   
