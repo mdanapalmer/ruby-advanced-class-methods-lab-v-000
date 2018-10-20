@@ -44,4 +44,18 @@ def self.alphabetical
   @@all.sort_by { |song| song.name}
 end
 
+def self.new_from_filename(filename)
+  file_name = filename.split(" - ")
+  songs = file_name.collect do |element|
+    data = element.split(".mp3")
+    artist = data[0]
+    name = data[1]
+
+    song = Song.new 
+    song.artist = artist
+    song.name = name
+    song
+  end
+end
+
 end
