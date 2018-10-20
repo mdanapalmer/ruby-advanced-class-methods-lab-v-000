@@ -53,7 +53,6 @@ def self.new_from_filename(filename)
     song.artist_name = artist_name
     song.name = song_name
     song
-  end
 end
 
 end
